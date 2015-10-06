@@ -129,7 +129,7 @@ NET "an<3>" LOC = "F15"; # Bank = 1, Pin name = IO_L21P_1, Type = I/O, Sch name 
 ###NET "Led<7>" LOC = "P4";  # Bank = 3, Pin name = N.C., Type = N.C., Sch name = LD7? other than s3e500
 ##
 ### Switches
-NET "rst" LOC = "G18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
+##NET "rst" LOC = "G18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
 ##NET "in1<1>" LOC = "H18"; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = SW1
 ##NET "in1<2>" LOC = "K18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW2
 ##NET "in1<3>" LOC = "K17"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW3
@@ -140,10 +140,10 @@ NET "rst" LOC = "G18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
 #
 ### Buttons
 ##
-##NET "rst" LOC = "B18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN0
-##NET "btn<1>" LOC = "D18"; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = BTN1
-##NET "btn<2>" LOC = "E18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN2
-##NET "btn<3>" LOC = "H13"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN3
+NET "rst" LOC = "B18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN0
+NET "startstop" LOC = "D18"; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = BTN1
+NET "up" LOC = "E18"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN2
+NET "down" LOC = "H13"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = BTN3
 ##
 ### VGA Connector 
 ##NET "vgaRed<1>"   LOC = "R9"; # Bank = 2, Pin name = IO/D5, Type = DUAL, Sch name = RED0
