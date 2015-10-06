@@ -20,32 +20,28 @@
 //////////////////////////////////////////////////////////////////////////////////
 module top(
 	clk,
-	blah_seg,
-	blah_an,
 	rst,
-	an[1:3],
-	seg[1:7],
-	in1[0:3],
-	in2[0:3]
+	an[3:0],
+	seg[7:0]
     );
 
 input clk;
-output reg blah_seg;
-output reg blah_an;
 input rst;
-output [1:3] an;
-output [1:7] seg;
-input [0:3] in1;
-input [0:3] in2;
-
-assign an[1:3] = 3'b111;
-assign seg[1:7] = 7'b0000001;
-
+output reg [3:0] an;
+output reg [7:0] seg;
 
 always @(posedge clk)
 begin
-	blah_seg <= 0;
-	blah_an <= 0;
+if (rst)
+begin
+an[3:0] <= 4'b1111;
+seg[7:0] <= 8'b11111111;
+end
+else
+begin
+ an[3:0] <= 4'b1110;
+ seg[7:0] <= 8'b00001111;
+ end
 end
 
 endmodule
