@@ -32,16 +32,16 @@ output reg [7:0] seg;
 
 always @(posedge clk)
 begin
-if (rst)
-begin
-an[3:0] <= 4'b1111;
-seg[7:0] <= 8'b11111111;
-end
-else
-begin
- an[3:0] <= 4'b1110;
- seg[7:0] <= 8'b00001111;
- end
+	if (rst)
+	begin
+		an[3:0] <= 4'b1111;
+		seg[7:0] <= 8'b11111111;
+	end
+	else
+	begin
+		an[3:0] <= 4'b1110;
+		seg[7:0] <= 8'b00001111;
+	end
 end
 
 endmodule
