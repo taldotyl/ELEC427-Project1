@@ -57,12 +57,25 @@ module tb_top;
 		// Wait 100 ns for global reset to finish
 		#100;
         
-		// Add stimulus here
+		// Reset
 		rst = 1;
 		#20;
 		rst = 0;
-		#10;
+		#30;
 		
+		//Test up/down debouncing
+		up = 1;
+		#1000;
+		up = 0;
+		#50;
+		up = 1;
+		#10000
+		up = 0;
+		#500;
+		up = 1;
+		#1000;
+		up = 0;
+		#1000;
 	
 		
 	end
